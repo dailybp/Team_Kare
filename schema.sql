@@ -1,3 +1,4 @@
+
 DROP DATABASE IF EXISTS packagesdb;
 CREATE DATABASE packagesdb;
 
@@ -124,3 +125,9 @@ RIGHT JOIN skus ON items.skuId = skus.id;
 
 
 
+=======
+-- Drops the todolist if it exists currently --
+DROP DATABASE IF EXISTS todolist;
+-- Creates the "todolist" database --
+CREATE DATABASE packages;
+>>>>>>> b06d0b612249d5de68c46c5edd52cc5430833a39

@@ -1,0 +1,172 @@
+<!-- Demo Layout for Bootstrap (with panels) -->
+<!DOCTYPE html>
+<head>
+<html lang="en-us">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="../public/css/styles.css">
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--<script src="js/jquery-2.2.3.min.js"></script>-->
+<!--<script src="js/jquery.mycart.min.js"></script>-->
+
+
+  <meta charset="UTF-8">
+  <title>CareBear Packages</title>
+
+  <!-- We need to bring in the bootstrap CSS -->
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
+
+</head>
+
+<body>
+
+  <!-- NavBar (copied and pasted from WC3) -->
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        <a class="navbar-brand" href="#">Home</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="militarydropdown">
+          	<a href="#" class="dropdown-toggle" data-toggle = "dropdown" role = "button" aria-haspopup = "true" aria-expanded = "false"> Military <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Male</a></li>
+                <li><a href="#">Female</a></li>
+              </ul>
+            </li>
+          	
+          <li class = "getwelldropdown">
+          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Well <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Male</a></li>
+                <li><a href="#">Female</a></li>
+              </ul>
+            </li>
+
+
+            <li class = "collegedropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">College <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Male</a></li>
+                <li><a href="#">Female</a></li>
+              </ul>
+            </li>
+
+          <li class = "petdropdown">
+            <a href="#" class="dropdown-menu multi-level" data-toggle="dropdown" role="menu" aria-haspopup="true" aria-expanded="false">Pets <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Dogs</a></li>
+                  <li class="dropdown-submenu">
+                    <a href="#" class='dropdown-toggle' data-toggle='dropdown'>Dogs</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">Second level</a></li>
+                        <li><a href="#">Small</a></li>
+                        <li><a href="#">Medium</a></li>
+                        <li><a href="#">Large</a></li>
+                    </ul>    
+                  </li>
+
+              <li><a href="#">Cats</a></li>
+
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="./">Contact Us <span class="sr-only">(current)</span></a></li>
+          <li><a href="../navbar-static-top/">Our Story</a></li>
+          <li><a href="../navbar-fixed-top/">Specials</a></li>
+          <!-- shopping cart -->
+      	  <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+
+  <!-- Main Body goes in Container -->
+  <div class="container">
+    <div class="row">
+
+      <!-- The content in this div gets wrapped in a panel -->
+      <div class="panel panel-default">
+        <div class="panel-body">
+          
+          <h3><strong>Kare Packages</strong></h3>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="main-container">  
+      <div class="row">
+        <div class="col-md-3 text-center">
+          <img src="images/img_1.png" width="150px" height="150px">
+          <br>
+          small - <strong>$10</strong>
+          <br>
+          <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/img_1.png">Add to Cart</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target= "#myModal">Details</button>
+        </div>
+
+        <div class="col-md-3 text-center">
+          <img src="images/img_2.png" width="150px" height="150px">
+          <br>
+          medium - <strong>$20</strong>
+          <br>
+          <button class="btn btn-danger my-cart-btn" data-id="2" data-name="product 2" data-summary="summary 2" data-price="20" data-quantity="1" data-image="images/img_2.png">Add to Cart</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target= "#myModal">Details</button>
+        </div>
+
+        <div class="col-md-3 text-center">
+          <img src="images/img_3.png" width="150px" height="150px">
+          <br>
+          large - <strong>$30</strong>
+          <br>
+          <button class="btn btn-danger my-cart-btn" data-id="3" data-name="product 3" data-summary="summary 3" data-price="30" data-quantity="1" data-image="images/img_3.png">Add to Cart</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target= "#myModal">Details</button>
+        </div>
+       </div>
+    </div>
+  </div>
+  
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" id = "myModal" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer id="footer">
+    <h4>© Copyright 2017 Kevin Hamilton, Sabrina Simms, Mike Yencha, Beverly Miramontes, Brandon Dailey </h4>
+  </footer>
+
+  <script src="js/jquery.mycart.js"></script>
+  <script type="text/javascript" href="..public/js/logic.js"></script>
+
+</body>
+
+</html>

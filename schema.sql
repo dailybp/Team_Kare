@@ -1,7 +1,74 @@
 
-DROP DATABASE IF EXISTS packagesdb;
-CREATE DATABASE packagesdb;
+/*DROP DATABASE IF EXISTS packagesdb;*/
+/*CREATE DATABASE packagesdb;*/
 
+/*----------Seeds for orgs table--------------------*/
+INSERT INTO orgs (orgname,createdAt,updatedAt) values ('military', CURDATE(),CURDATE());
+INSERT INTO orgs (orgname,createdAt,updatedAt) values ('college', CURDATE(),CURDATE());
+INSERT INTO orgs (orgname,createdAt,updatedAt) values ('ill', CURDATE(),CURDATE());
+/*----------Military seeds for packages table--------------------*/
+INSERT INTO packages 
+(packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
+values ('packagemms','male', 'small', 'This is a small military male package', '$19.99', CURDATE(),CURDATE(), 1);
+INSERT INTO packages 
+(packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
+values ('packagemfs','female', 'small', 'This is a small military female package', '$19.99', CURDATE(),CURDATE(), 1);
+INSERT INTO packages 
+(packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
+values ('packagemmm','male', 'medium', 'This is a medium military male package', '$29.99', CURDATE(),CURDATE(), 1);
+INSERT INTO packages 
+(packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
+values ('packagemfm','female', 'medium', 'This is a medium military female package', '$29.99', CURDATE(),CURDATE(), 1);
+INSERT INTO packages 
+(packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
+values ('packagemml','male', 'large', 'This is a large military male package', '$34.99', CURDATE(),CURDATE(), 1);
+INSERT INTO packages 
+(packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
+values ('packagemfl','female', 'large', 'This is a large military female package', '$34.99', CURDATE(),CURDATE(), 1);
+/*----------College seeds for packages table--------------------*/
+INSERT INTO packages 
+(packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
+values ('packagecms','male', 'small', 'This is a small college male package', '$19.99', CURDATE(),CURDATE(), 1);
+INSERT INTO packages 
+(packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
+values ('packagecfs','female', 'small', 'This is a small college female package', '$19.99', CURDATE(),CURDATE(), 1);
+INSERT INTO packages 
+(packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
+values ('packagecmm','male', 'medium', 'This is a medium college male package', '$29.99', CURDATE(),CURDATE(), 1);
+INSERT INTO packages 
+(packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
+values ('packagecfm','female', 'medium', 'This is a medium college female package', '$29.99', CURDATE(),CURDATE(), 1);
+INSERT INTO packages 
+(packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
+values ('packagecml','male', 'large', 'This is a large college male package', '$34.99', CURDATE(),CURDATE(), 1);
+INSERT INTO packages 
+(packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
+values ('packagecfl','female', 'large', 'This is a large college female package', '$34.99', CURDATE(),CURDATE(), 1);
+/*----------Ill seeds for packages table--------------------*/
+INSERT INTO packages 
+(packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
+values ('packageims','male', 'small', 'This is a small ill male package', '$19.99', CURDATE(),CURDATE(), 1);
+INSERT INTO packages 
+(packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
+values ('packageifs','female', 'small', 'This is a small ill female package', '$19.99', CURDATE(),CURDATE(), 1);
+INSERT INTO packages 
+(packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
+values ('packageimm','male', 'medium', 'This is a medium ill male package', '$29.99', CURDATE(),CURDATE(), 1);
+INSERT INTO packages 
+(packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
+values ('packageifm','female', 'medium', 'This is a medium ill female package', '$29.99', CURDATE(),CURDATE(), 1);
+INSERT INTO packages 
+(packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
+values ('packageiml','male', 'large', 'This is a large ill male package', '$34.99', CURDATE(),CURDATE(), 1);
+INSERT INTO packages 
+(packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
+values ('packageifl','female', 'large', 'This is a large ill female package', '$34.99', CURDATE(),CURDATE(), 1);
+/*----------Seeds for items table--------------------*/
+INSERT INTO items (item,createdAt,updatedAt,packageId) values ('brush', CURDATE(),CURDATE(), 1);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('toothbrush', CURDATE(),CURDATE(), 1);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('baby wipes', CURDATE(),CURDATE(), 1);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('shampoo', CURDATE(),CURDATE(), 1);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('snacks', CURDATE(),CURDATE(), 1);
 
 /*USE packages_db;
 CREATE TABLE orgs(

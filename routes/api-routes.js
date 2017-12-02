@@ -1,3 +1,4 @@
+
 // *********************************************************************************
 // api-routes.js - this file offers a set of routes for displaying and saving data to the db
 // *********************************************************************************
@@ -17,9 +18,45 @@ module.exports = function(app) {
     // findAll returns all entries for a table when used with no options
     db.Todo.findAll({}).then(function(dbTodo) {
       // We have access to the todos as an argument inside of the callback function
-      res.json(dbTodo);
+      res.json(packages_db);
     });
   });
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   // POST route for saving a new todo
   app.post("/api/todos", function(req, res) {

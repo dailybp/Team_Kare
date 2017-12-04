@@ -1,28 +1,24 @@
 module.exports = function(sequelize, DataTypes) {
-  var package = sequelize.define("package", {
+  var packages = sequelize.define("packages", {
+    packagename: DataTypes.STRING,
+    gender: DataTypes.STRING,
+    size: DataTypes.STRING,
+    description: DataTypes.STRING,
+    price: DataTypes.STRING
   });
 
-  package.associate = function(models){
-  	package.hasOne(models.orgs, {
-  		foreignKey:{
-  			allowNull:false
-  		}
-  	});
-  	package.hasOne(models.sizes, {
-  		foreignKey:{
-  			allowNull:false
-  		}
-  	});
-  	package.hasOne(models.genders, {
-  		foreignKey:{
-  			allowNull:false
-  		}
-  	});
-  	package.hasMany(models.items, {
-  		foreignKey:{
-  			allowNull:false
-  		}
-  	});
-  };
-  return package;
+
+  packages.associate = function(models) {
+   // We're saying that a Post should belong to an Author
+   // A Post can't be created without an Author due to the foreign key constraint
+   packages.belongsTo(models.orgs, {
+     foreignKey: {
+       allowNull: false
+     }
+   });
+ };
+
+ return packages;
 };
+
+

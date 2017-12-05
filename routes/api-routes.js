@@ -29,7 +29,7 @@ module.exports = function (app) {
       if(req.params.org){
         Package.findAll({
           where: {
-            orgname: req.params.orgname;
+            orgname: req.params.orgname
           }
         }).then(function(results){
           res.json(results);

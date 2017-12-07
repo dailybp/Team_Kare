@@ -63,16 +63,60 @@ values ('packageiml','male', 'large', 'This is a large ill male package', '$34.9
 INSERT INTO packages 
 (packagename,gender, size, description, price, createdAt,updatedAt,orgId) 
 values ('packageifl','female', 'large', 'This is a large ill female package', '$34.99', CURDATE(),CURDATE(), 1);
-/*----------Seeds for items table--------------------*/
+/*----------------------------------------------------------------------Seeds for items table------------------------------------------------------------------*/
+
+/*-------------------Military Male/Female small---------------------------*/
 INSERT INTO items (item,createdAt,updatedAt,packageId) values ('brush', CURDATE(),CURDATE(), 1);
 INSERT INTO items (item,createdAt,updatedAt, packageId) values ('toothbrush', CURDATE(),CURDATE(), 1);
 INSERT INTO items (item,createdAt,updatedAt, packageId) values ('baby wipes', CURDATE(),CURDATE(), 1);
 INSERT INTO items (item,createdAt,updatedAt, packageId) values ('shampoo', CURDATE(),CURDATE(), 1);
 INSERT INTO items (item,createdAt,updatedAt, packageId) values ('snacks', CURDATE(),CURDATE(), 1);
 
+INSERT INTO items (item,createdAt,updatedAt,packageId) values ('brush', CURDATE(),CURDATE(), 2);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('toothbrush', CURDATE(),CURDATE(), 2);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('baby wipes', CURDATE(),CURDATE(), 2);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('shampoo', CURDATE(),CURDATE(), 2);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('snacks', CURDATE(),CURDATE(), 2);
+
+/*-------------------Military Male/Female medium---------------------------*/
+INSERT INTO items (item,createdAt,updatedAt,packageId) values ('brush', CURDATE(),CURDATE(), 3);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('toothbrush', CURDATE(),CURDATE(), 3);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('baby wipes', CURDATE(),CURDATE(), 3);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('shampoo', CURDATE(),CURDATE(), 3);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('snacks', CURDATE(),CURDATE(), 3);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('shampoo', CURDATE(),CURDATE(), 3);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('snacks', CURDATE(),CURDATE(), 3);
+
+INSERT INTO items (item,createdAt,updatedAt,packageId) values ('brush', CURDATE(),CURDATE(), 4);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('toothbrush', CURDATE(),CURDATE(), 4);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('baby wipes', CURDATE(),CURDATE(), 4);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('shampoo', CURDATE(),CURDATE(), 4);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('snacks', CURDATE(),CURDATE(), 4);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('shampoo', CURDATE(),CURDATE(), 4);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('snacks', CURDATE(),CURDATE(), 4);
+
+/*-------------------Military Male/Female large---------------------------*/
+INSERT INTO items (item,createdAt,updatedAt,packageId) values ('brush', CURDATE(),CURDATE(), 5);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('toothbrush', CURDATE(),CURDATE(), 5);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('snacks', CURDATE(),CURDATE(), 5);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('shampoo', CURDATE(),CURDATE(), 5);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('snacks', CURDATE(),CURDATE(), 5);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('conditioner', CURDATE(),CURDATE(), 5);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('lotion', CURDATE(),CURDATE(), 5);
+
+INSERT INTO items (item,createdAt,updatedAt,packageId) values ('brush', CURDATE(),CURDATE(), 6);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('toothbrush', CURDATE(),CURDATE(), 6);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('baby wipes', CURDATE(),CURDATE(), 6);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('shampoo', CURDATE(),CURDATE(), 6);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('snacks', CURDATE(),CURDATE(), 6);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('shampoo', CURDATE(),CURDATE(), 6);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('snacks', CURDATE(),CURDATE(), 6);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('conditioner', CURDATE(),CURDATE(), 6);
+INSERT INTO items (item,createdAt,updatedAt, packageId) values ('lotion', CURDATE(),CURDATE(), 6);
+
 /*USE packages_db;
 CREATE TABLE orgs(
-  id INTEGER(11) AUTO_INCREMENT NOT NULL,
+  id INTEGER(11) AUTO_INCREMENT NOT NULL,lscd cd 
   orgname VARCHAR(100),
   PRIMARY KEY (id)
 );

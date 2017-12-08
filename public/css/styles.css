@@ -196,7 +196,31 @@ padding: 5px;
 #myModal .modal-footer {
   border-top: 3px solid #3F8EFC;
 }
-.modal-footer .btn.btn-default {
+#myModal .modal-footer .btn.btn-default {
+  background-color: #3F8EFC;
+  color: white;
+}
+
+/* my cart modal */
+#my-cart-modal .modal-header {
+  padding: 0;
+}
+#my-cart-modal .modal-header .close {
+  padding: 15px 15px 15px 0;
+}
+#my-cart-modal .modal-header .modal-title {
+  font-family: 'Berkshire Swash';
+  font-size: 24px;
+  background-color: #3F8EFC;
+  padding: 15px;
+  color: white;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+#my-cart-modal .modal-footer {
+  border-top: 3px solid #3F8EFC;
+}
+#my-cart-modal .modal-footer .btn.btn-default {
   background-color: #3F8EFC;
   color: white;
 }

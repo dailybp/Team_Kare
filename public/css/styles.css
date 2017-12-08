@@ -1,14 +1,33 @@
 html, body {
   height: 100%;
 }
-
+/* specialty font */
+/* font-family: 'Berkshire Swash', cursive; */
 body {
-  background-image: url(../images/background.png);
-  background-size:cover;
+  /* background-image: url(../images/background.png); */
+  /* background-size:cover; */
 /*  color:white;*/
 /*  font-family: 'Fjalla One', sans-serif;*/
 }
-
+.navbar-nav {
+  float: none;
+}
+.navbar.navbar-default {
+  background-color: #3F8EFC;
+}
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+  color: white;
+}
+.navbar-default .navbar-nav>li:hover {
+  background-color: #87BFFF;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-nav>li>a:hover {
+  color: #3B28CC;
+}
+.my-cart-icon {
+margin-top: 17px;
+margin-left: 15px;
+}
 input.new-item {
   width: 75%;
   height: 35px;
@@ -19,7 +38,16 @@ input.new-item {
 input.new-item:focus {
   outline: none;
 }
-
+.panel {
+  background-color: #3B28CC;
+  border-radius: 10px;
+}
+.panel-body h3 {
+  font-family: 'Berkshire Swash';
+  font-size:42px;
+  margin: 0;
+  color: white;
+}
 #footer{
     font-family: 'Changa', sans-serif;
     right: 0;
@@ -27,7 +55,7 @@ input.new-item:focus {
     bottom: 0;
     text-align: center;
     padding-top: 0;
-    background-color: #289988;
+  background-color: #3B28CC;
     color: white;
     position:fixed!important;
     position:absolute;

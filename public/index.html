@@ -3,8 +3,9 @@
 <head>
 <html lang="en-us">
 
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="../public/css/styles.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+<link rel="stylesheet" href="./css/styles.css">
 <script src="js/jquery-2.2.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/navigation.js"></script>
@@ -37,7 +38,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="./home.html">Home</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
@@ -107,22 +108,25 @@
     </div>
     <div id="main-container">  
       <div class="row">
+        <div class="col-md-3">
+        
+        </div>
         <div class="col-md-3 text-center">
-          <img id="imgsm" src="images/mm_1.png" width="150px" height="150px">
+          <img id="imgsm" src="./images/mm_1.png" width="150px" height="150px">
           <br> small - <strong>$10</strong><br>
           <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/img_1.png">Add to Cart</button>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target= "#myModal">Details</button>
         </div>
         <div class="col-md-3 text-center">
-          <img id="imgmd" src="images/img_2.png" width="150px" height="150px">
+          <img id="imgmd" src="./images/mm_2.png" width="150px" height="150px">
           <br>
           medium - <strong>$20</strong>
           <br>
-          <button class="btn btn-danger my-cart-btn" data-id="2" data-name="product 2" data-summary="summary 2" data-price="20" data-quantity="1" data-image="images/img_2.png">Add to Cart</button>
+          <button class="btn btn-danger my-cart-btn" data-id="2" data-name="product 2" data-summary="summary 2" data-price="20" data-quantity="1" data-image="./images/mm_3.png">Add to Cart</button>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target= "#myModal">Details</button>
         </div>
         <div class="col-md-3 text-center">
-          <img id="imglg" src="images/img_3.png" width="150px" height="150px">
+          <img id="imglg" src="images/mm_3.png" width="150px" height="150px">
           <br>
           large - <strong>$30</strong>
           <br>
@@ -157,10 +161,11 @@
   </footer>
 
   <script src="js/jquery.mycart.js"></script>
-  <script type="text/javascript" href="..public/js/logic.js"></script>
+  <script type="text/javascript" href="./js/logic.js"></script>
   <script>
       $("a.option").click(function(){
       var myimg = $(this).data('img');
+      console.log(this);
       $('#imgsm').attr('src', 'images/' + myimg + "_1.png");
       $('#imgmd').attr('src', 'images/' + myimg + "_2.png");
       $('#imglg').attr('src', 'images/' + myimg + "_3.png");

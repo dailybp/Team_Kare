@@ -109,15 +109,15 @@
     <div id="main-container">  
       <div class="row">
         <div class="col-md-3">
-        
+          <img id="logo" class="img-responsive" src="./images/teamkare.jpg" width="250px">
         </div>
-        <div class="col-md-3 text-center">
+        <div class="item-img col-md-3 text-center">
           <img id="imgsm" src="./images/mm_1.png" width="150px" height="150px">
           <br> small - <strong>$10</strong><br>
           <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/img_1.png">Add to Cart</button>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target= "#myModal">Details</button>
         </div>
-        <div class="col-md-3 text-center">
+        <div class="item-img col-md-3 text-center">
           <img id="imgmd" src="./images/mm_2.png" width="150px" height="150px">
           <br>
           medium - <strong>$20</strong>
@@ -125,7 +125,7 @@
           <button class="btn btn-danger my-cart-btn" data-id="2" data-name="product 2" data-summary="summary 2" data-price="20" data-quantity="1" data-image="./images/mm_3.png">Add to Cart</button>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target= "#myModal">Details</button>
         </div>
-        <div class="col-md-3 text-center">
+        <div class="item-img col-md-3 text-center">
           <img id="imglg" src="images/mm_3.png" width="150px" height="150px">
           <br>
           large - <strong>$30</strong>
@@ -165,7 +165,6 @@
   <script>
       $("a.option").click(function(){
       var myimg = $(this).data('img');
-      console.log(this);
       $('#imgsm').attr('src', 'images/' + myimg + "_1.png");
       $('#imgmd').attr('src', 'images/' + myimg + "_2.png");
       $('#imglg').attr('src', 'images/' + myimg + "_3.png");

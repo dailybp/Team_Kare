@@ -9,6 +9,9 @@ body {
 /*  color:white;*/
 /*  font-family: 'Fjalla One', sans-serif;*/
 }
+.btn-primary {
+  
+}
 .navbar-nav {
   float: none;
 }
@@ -47,6 +50,9 @@ input.new-item:focus {
   font-size:42px;
   margin: 0;
   color: white;
+}
+.item-img {
+  margin-top:75px;
 }
 #footer{
     font-family: 'Changa', sans-serif;

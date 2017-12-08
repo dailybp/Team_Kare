@@ -10,7 +10,20 @@ body {
 /*  font-family: 'Fjalla One', sans-serif;*/
 }
 .btn-primary {
-  
+  background-color: #3B28CC;
+}
+.btn-primary:active {
+  background-color: #87BFFF;
+}
+.btn-primary:focus {
+  background-color: #2667FF;
+}
+.btn-primary:hover {
+  background-color: #24187C;
+}
+.btn-danger {
+  background-color: #A32723;
+  border-color: #A32723;
 }
 .navbar-nav {
   float: none;
@@ -53,6 +66,15 @@ input.new-item:focus {
 }
 .item-img {
   margin-top:75px;
+}
+.item-img strong {
+  margin: 5px 0;
+  display: inline-block;
+  color: #24187C;
+}
+.item-img img {
+  border: 3px solid #A32723;
+  border-radius: 10px;
 }
 #footer{
     font-family: 'Changa', sans-serif;
@@ -155,3 +177,26 @@ padding: 5px;
 
 
 /*---Modal CSS---*/
+
+#myModal .modal-header {
+  padding: 0;
+}
+#myModal .modal-header .close {
+  padding: 15px 15px 15px 0;
+}
+#myModal .modal-header .modal-title {
+  font-family: 'Berkshire Swash';
+  font-size: 24px;
+  background-color: #3F8EFC;
+  padding: 15px;
+  color: white;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+#myModal .modal-footer {
+  border-top: 3px solid #3F8EFC;
+}
+.modal-footer .btn.btn-default {
+  background-color: #3F8EFC;
+  color: white;
+}
